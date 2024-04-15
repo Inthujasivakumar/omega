@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Course Application Form</title>
+    <style>
+        body {
+            background-image:C:\Users\Jilans\Desktop\WEBPAGE;
+            background-size: cover; 
+            background-repeat: no-repeat;
+            background-color: #FCD9DE; 
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <h1><center><b>Course Application Form</b></center></h1><br>
+    <form action="submit_application.php" method="POST">
+        <label for="full_name">Full Name:</label><br>
+        <input type="text" id="full_name" name="full_name" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="phone">Phone:</label><br>
+        <input type="tel" id="phone" name="phone" required><br><br>
+		
+		 <label for="phone">Address:</label><br>
+		<input type="text" name="Address" maxlength="50" required="required"><br><br>
+		
+		 <label for="phone">City:</label><br>
+        <input type="text" name="City" maxlength="30" required="required"><br><br>
+		
+		<label for="course">Select Course:</label><br>
+		<select name="cource" id="select_cource">
+		<option value="Information Technology">Information Technology</option>
+		<option value="Hotel Managanment">Hotel Managanment</option>
+		<option value="Engineering">Engineering</option>
+		<option value="Marketing ">Marketing</option>
+		<option value="English">Diploma in English</option>
+		<option value="Agriculture">Agriculture</option>
+		</select><br><br>
+		
+		
+
+        <label for="message">Message (optional):</label><br>
+        <textarea id="message" name="message" rows="4" cols="50"></textarea><br><br>
+		
+		
+	
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
